@@ -7,7 +7,7 @@ Creates a PrusaSlicer like embeded snapshot/thumbnail.
 Here is a benchy, sliced by Cura, uploaded to Octoprint and displayed with [OctoPrint-PrusaSlicerThumbnails](https://github.com/jneilliii/OctoPrint-PrusaSlicerThumbnails):
 
 
-![Result](Result-1.png)
+![Result](Result-1.jpg)
 
 
 ### How do I work this thing?
