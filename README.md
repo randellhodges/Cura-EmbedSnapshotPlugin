@@ -6,7 +6,7 @@ Creates a PrusaSlicer like embeded snapshot/thumbnail.
 
 ### How do I work this thing?
 
-A menu option, "Thumbnail Settings", will be added until the Extenions menu. You can chose the "Configure Thumbnail Settings" option to enable/disable.
+A menu option, "Thumbnail Settings", will be added to the Extensions menu. You can chose the "Configure Thumbnail Settings" option to enable/disable.
 
 Enabled: Turn on/off the plugin
 
