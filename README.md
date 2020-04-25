@@ -13,7 +13,7 @@ Enabled: Turn on/off the plugin
 Formats: A comman delimited list of formats for each thumbnail you want to embed in the gcode file. The [OctoPrint-PrusaSlicerThumbnails](https://github.com/jneilliii/OctoPrint-PrusaSlicerThumbnails) by [jneilliii](https://github.com/jneilliii) currently supports the last one specified.
 
 Examples:
-```16x16, 200x200;JPG;90, 300x300;PNG-1```
+```16x16, 200x200;JPG;90, 300x300;PNG;-1```
 
 This would embed 3 thumbnails.
 1) A 16 by 16 PNG with default quality
