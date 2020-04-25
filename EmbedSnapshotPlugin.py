@@ -1,27 +1,20 @@
-# Copyright (c) 2018 fieldOfView
-# The LinearAdvanceSettingPlugin is released under the terms of the AGPLv3 or higher.
+# I used code from fieldOfView (https://github.com/fieldOfView) as a guide for plugin development as well as
+# source from Cura (https://github.com/Ultimaker/Cura)
+
+# This plugin would not be possible without their work.
 
 from PyQt5 import QtCore, QtGui
 from PyQt5.QtGui import QImage
 
 from UM.Extension import Extension
-from UM.Application import Application
 from UM.Logger import Logger
-from UM.Settings.SettingDefinition import SettingDefinition
-from UM.Settings.DefinitionContainer import DefinitionContainer
-from UM.Settings.ContainerRegistry import ContainerRegistry
 
 from cura.CuraApplication import CuraApplication
-from cura.Utils.Threading import call_on_qt_thread
-
-#from .Snapshot import Snapshot
 from cura.Snapshot import Snapshot
 
-import collections
-import json
-import os.path
-
 from UM.i18n import i18nCatalog
+
+import os.path
 
 catalog = i18nCatalog("embed_snapshot")
 
@@ -108,16 +101,12 @@ class EmbedSnapshotPlugin(Extension):
         # Loop thru and parse the resolutions
         def parse_formats(formats):
 
-            # supported save formats
-            #supported_formats = { "BMP": "BMP", "JPG": "JGP", "JPEG": "JPEG", "PNG":"PNG", "PPM": "PPM",  }
-
             supported_formats = {
                 str(x.data(), encoding='utf-8').upper(): x for x in QtGui.QImageWriter.supportedImageFormats()
             }
 
             for r in [r.strip() for r in formats.split(',')]:
                 v = [v.strip() for v in r.split(';')]
-                # Width x Height
                 if v:
                     s = [s.strip() for s in v[0].split('x')]
                     if len(s) == 2:
