@@ -4,6 +4,12 @@
 
 Creates a PrusaSlicer like embeded snapshot/thumbnail.
 
+Here is a benchy, sliced by Cura, uploaded to Octoprint and displayed with [OctoPrint-PrusaSlicerThumbnails](https://github.com/jneilliii/OctoPrint-PrusaSlicerThumbnails):
+
+
+![Result](Result-1.png)
+
+
 ### How do I work this thing?
 
 A menu option, "Thumbnail Settings", will be added to the Extensions menu. You can chose the "Configure Thumbnail Settings" option to enable/disable.
