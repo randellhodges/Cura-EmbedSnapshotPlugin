@@ -1,0 +1,9 @@
+{
+    "name": "Embed Snapshot",
+    "author": "randellhodges",
+    "version": "0.1.0",
+    "description": "Creates a PrusaSlicer like embedded thumbnail",
+    "api": 5,
+    "supported_sdk_versions": ["6.0.0", "7.0.0"],
+    "i18n-catalog": "embed_snapshot"
+}
