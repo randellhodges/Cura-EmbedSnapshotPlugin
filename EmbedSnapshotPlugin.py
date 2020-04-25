@@ -10,7 +10,8 @@ from UM.Extension import Extension
 from UM.Logger import Logger
 
 from cura.CuraApplication import CuraApplication
-from cura.Snapshot import Snapshot
+#from cura.Snapshot import Snapshot
+from .Snapshot import Snapshot
 
 from UM.i18n import i18nCatalog
 
@@ -67,6 +68,8 @@ class EmbedSnapshotPlugin(Extension):
             buffer.open(QtCore.QIODevice.WriteOnly)
 
             snapshot.save(buffer, image_format, image_quality)
+            #snapshot.save("C:/Temp/Out.png")
+
             base64_data = ba.toBase64().data()
             base64_string = str(base64_data, 'utf-8').strip()
 
