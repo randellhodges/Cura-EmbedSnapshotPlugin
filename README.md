@@ -2,6 +2,8 @@
 
 ### What it does:
 
+Alternative for [UltimakerFormatPackage](https://plugins.octoprint.org/plugins/UltimakerFormatPackage/) that gives you:
+
 Creates a PrusaSlicer like embeded snapshot/thumbnail.
 
 Here is a benchy, sliced by Cura, uploaded to Octoprint and displayed with [OctoPrint-PrusaSlicerThumbnails](https://github.com/jneilliii/OctoPrint-PrusaSlicerThumbnails):
